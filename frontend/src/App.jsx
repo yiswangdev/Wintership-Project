@@ -23,9 +23,7 @@ function App() {
         onChange={(e) => setSymbol(e.target.value)}
         placeholder="Enter Symbol"
       />
-
       <button onClick={getStock}>Search</button>
-
       {stock && (
         <div>
           <p>Open Price: {stock.o}</p>

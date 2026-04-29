@@ -12,7 +12,7 @@ app.use(express.json());
 app.get("/api/quote/:symbol", async (req, res) => {
   try {
     const symbol = req.params.symbol;
-    const apikey = process.env.API_KEY;
+    const apikey = process.env.apikey;
 
     const url = `https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${apikey}`;
 
